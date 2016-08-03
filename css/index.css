@@ -1,0 +1,395 @@
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:100;
+	src:local('Myriad Set Pro'), url("../fonts/Myriad-set-pro_semibold.woff") format("woff");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption {
+    display: block;
+}
+body{
+	font-family:"Myriad Set Pro","微软雅黑";margin:0;
+}
+ul,li,h1,h2,h3,h4,h5,h6,p{
+	margin:0;padding:0;font-weight:normal;list-style:none;  
+}
+a{
+	color:black;text-decoration:none; 
+}
+.test{
+	border:1px solid black;
+}
+.clearfix:after{
+	content:"";clear:both;display:block;
+}
+.test .item{
+	width:200px;height:200px;border:1px solid black;float:left;margin:10px;
+}
+
+
+nav{
+	text-align:justify;background:rgba(0,0,0,0.8);width:100%;overflow:hidden;  
+}
+nav li a{
+	display:block;width:100%;height:100%; 
+}
+nav li{
+	display:inline-block;height:44px;position: relative;  
+}
+nav #bigul{
+	width:100%;margin:0 auto;text-align:justify;min-width:798px;max-width:1000px; 
+}
+nav #bigul:after{
+	content:"";clear:both;display: inline-block;width:100%;height:0;font-size:0;line-height: 0;
+} 
+nav #smallul{
+	width:100%;margin:0 auto;text-align:justify;
+}
+nav #smallul:after{
+	content:"";clear:both;display:inline-block;width:100%;height:0;font-size:0;line-height:0;  
+}
+nav #smallul .logo{
+	position: absolute;left:50%; margin-left:-11px; 
+}
+nav #smallul .bag{
+	left:100%;  margin-left:-22px; 
+}
+nav #smallul label{
+	left:1%;position:absolute; 
+}
+nav>ul>input{
+	display: none;position: relative;
+} 
+#input+label{
+	width:20px;height:40px;
+	display: block;position: relative;
+}
+#label span:first-of-type{
+	border-bottom:3px solid white;position: absolute;
+	left:6px;top:14px;width:18px;
+}
+#label span:last-of-type{
+	border-bottom:3px solid white;position: absolute;
+	left:6px;top:24px;width:18px;
+}
+#label span{
+	transition:all 0.6s ease;
+}
+#label{
+	transition:all 0.6s ease;
+}
+#input:checked~#label{
+	transform:rotateZ(90deg); left:20px;
+}
+#input:checked~#label span:first-child{
+	transform:rotateZ(45deg);
+	top:22px;
+}
+#input:checked~#label span:last-child{
+	transform:rotateZ(-45deg);
+	top:22px;
+}
+nav ul #list{
+	position: relative;
+}
+nav>ul>#xiala{
+	visibility: hidden;
+	opacity: 0;
+	position:absolute;top:44px;background:black;z-index:444;
+	width:100%;height:100%;
+	transition: all 1s ease;
+}
+#xiala li{
+	list-style:none;width:80%;border-bottom:1px solid #ccc;position: absolute;left:2.225em;    
+}
+#input:checked~#xiala{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* nav .list{
+	background:url(../svg/shou.svg) no-repeat;width:1.25em;margin-left:0.5em; 
+} */
+nav #smallul li{
+	display:inline-block;height:44px;position: relative;
+}
+nav #smallul a{
+	 display: block;width:100%;height:100%;
+}
+/* nav #smallul{
+	position:relative; 
+}
+nav #smallul .list{
+	position:absolute;left:0;top:0;width:44px;height:44px;background:red; 
+}
+nav #smallul .logo{
+	position: absolute;left:50%;top:0;
+}
+nav #smallul .bag{
+	left:95%;
+} */
+nav span{
+	width:0;height:0;position:absolute;top:0;left:0;overflow: hidden; 
+}
+nav .logo{
+	background:url(../svg/logo.svg) no-repeat;width:1.25em;margin-left:1em;  
+}
+nav .Mac{
+    background:url(../svg/Mac.svg) no-repeat;width:2em;
+}
+nav .ipad{
+	background:url(../svg/ipad.svg) no-repeat;width:2em;
+}
+nav .iphone{
+	background:url(../svg/iphone.svg) no-repeat;width:3em;
+}
+nav .Watch{
+	background:url(../svg/Watch.svg) no-repeat;width:3em;
+}
+nav .Tv{
+	background:url(../svg/Tv.svg) no-repeat;width:2em;
+}
+nav .Music{
+	background:url(../svg/Music.svg) no-repeat;width:3em;
+}
+nav .Support{
+	background:url(../svg/Support.svg) no-repeat;width:3em;
+}
+nav .search{
+	background:url(../svg/shou.svg) no-repeat;width:1.25em;
+}
+nav .bag{
+	background:url(../svg/zhu.svg) no-repeat;width:1.25em;margin-right:1em; 
+}
+
+article{
+	height:78%;min-height:650px;     
+}
+article section{
+	position:absolute;height:100%;width:100%;  
+}
+article .hero-content{
+	  height:60%;min-height:300px;position:relative;  
+}
+article .hero-tu{
+    position: absolute;left:50%;top:50px;margin-left:-432px;width:100%; 
+    min-width:600px;max-width:865px;background:url(../img/download.jpg) no-repeat;height:366px;display:block; margin-top:-46px;
+}
+article .hero-tutv{
+    position: absolute;left:50%;top:360px;margin-left:-68px;
+	width:100%;max-width:136px;background:url(../img/3/download.png) no-repeat;height:50px;display:block;margin-top:-20px; 
+}
+article .copy{
+	left:50%;top:auto;vertical-align: top;height:41%;padding-top:70px;
+}
+article .copy:before{
+	content:"";display:inline-block;height:100%;width:0;font-size:0;margin:0px -1000px;padding:0;vertical-align:middle;
+}
+article .copy .copy-inner{
+	vertical-align: top;top:100%;left:-50%;padding-top:125px;text-align: center;
+}
+article .copy:after{
+	content:"";display:inline-block;height:100%;width:0;font-size:0;margin:0px -1000px;padding:0;vertical-align:middle;
+}
+article .copy .copy-inner h1{
+	overflow:hidden;width:1px; 
+}
+article .copy .copy-inner h2{
+	font-size:2.625em;line-height:1.1429;font-weight:200;
+}
+article .copy .copy-inner .links li{
+    display: inline-block;
+}
+article .copy .copy-inner .links li a{
+	color:blue;
+}
+
+
+.promo li{
+	width:25%;height:200px;float:left;
+}
+.promo a{
+	width:100%;height:100%;display: block;background-size:cover;background-position:center;font:0/0 a;   
+}
+.promo-watch{
+	background:url(../img/1/Z.jpg);
+}
+.promo-iphone6{
+	background:url(../img/4/E2AAVq2i66cKaZkAAAAASUVORK5CYII=.png);
+}
+.promo-mac{
+	background:url(../img/5/2Q==.jpg);
+}
+.promo-ios{
+	background:url(../img/6/2Q==.jpg);
+}
+
+
+#smallul{
+	display:none; 
+}
+
+.globalfooter{
+	background:#eee;
+}
+.globalfooter .gf-content{
+	max-width:980px;padding:0 22px;margin:0 auto;padding-top: 20px; 
+}
+.globalfooter .col{
+	width:20%;float:left;
+}
+.globalfooter nav{
+	background:white;
+}
+.globalfooter .col-section{
+	width:100%;
+}
+.globalfooter .col-products h3{
+	font-size:12px;padding:0;margin:0;  
+}
+.globalfooter ul{
+	margin-right:20px;list-style:none;line-height:12px;font-size:12px;    
+}
+.globalfooter li{
+	line-height:24px; 
+}
+.globalfooter a{
+	color:#666;
+}
+
+
+
+.footer_section{color:#999;
+                font-size:1em;
+                padding:20px 0 24px;}
+.footer_section_shop{border-bottom:1px solid #e3e3e3;
+                     max-height:9999px;
+                     margin-bottom:6px;
+                     padding-bottom:5px;}
+.footer_section_locale{float:right;
+                       white-space:nowrap;}
+.footer_section_legal{margin:0;
+                      padding:0;
+                      pointer-events:auto;
+                      letter-spacing:normal;}
+.footer_section_shop a{color:#08c;
+                       font-size:1em;}  
+.footer_section_locale a{color:#666;
+                         display:block;}
+.footer_section_locale a span{     background-repeat:no-repeat;
+    background-size:16px 16px;
+    display:block;
+    width:16px;
+    height:16px;
+    background-image:url("../img/16.png");
+    cursor:pointer;
+    float:left;
+    margin-top:1px;
+    padding-right:5px;}
+.copy_right{margin-right:26px;
+            float:left;}  
+.footer_section_legal_link a{    
+  border-right:1px solid #d6d6d6;
+  margin-right:10px;
+  padding-right:12px;
+  white-space:nowrap;
+  color: #666;}                      
+@media(max-width:765px){
+  .footer_section_shop,.footer_section_locale,.footer_section_legal,.copy_right,.footer_section_legal_link{width:100%;}
+  .footer_section_legal_link{padding-top:13px;}
+  .footer_section_shop{border:none;}
+  .footer_section_shop{margin-bottom:6px;}
+  .footer_section_locale{float:none;
+                         margin-bottom:13px;}
+  .footer_section_legal_link .border_none{border:none;}
+
+}
+#check11,#check22,#check33,#check44,#check55,#check66,#check77{
+		display: none;
+	}
+
+@media(max-width:1068px){
+	.promo li{
+		width:50%;
+	}
+}
+
+@media(max-width:735px){
+	article{
+	height:78%;min-height:350px;     
+    }
+    article .copy{
+	left:50%;top:auto;vertical-align: top;height:41%;padding-top:1px;
+    }
+	article .hero-tu{
+    position: absolute;left:50%;top:50px;margin-left:-12.5em;width:100%; 
+    min-width:320px;max-width:400px;background:url(../img/Z.jpg) no-repeat 40px 0px;height:122px;display:block; margin-top:-46px; z-index: 4;background-size:320px 122px;box-sizing:border-box;  
+    }
+    article .hero-tutv{
+    position: absolute;left:50%;top:200px;margin-left:-68px;
+	width:100%;max-width:136px;background:url(../img/3/1.png) no-repeat;height:50px;display:block;margin-top:-20px; 
+    }
+    article .copy .copy-inner h2{
+	font-size:1.625em;line-height:1.1429;font-weight:200;
+    }
+	#smallul{
+		display:block; 
+	}
+	#bigul{
+		display:none; 
+	}
+	.promo li{
+		width:100%;
+	}
+	.promo-watch{
+	background:url(../img/1/9k=.jpg);
+    }
+    .promo-iphone6{
+	background:url(../img/4/download.jpg);
+	}
+	.promo-mac{
+		background:url(../img/5/download.jpg);
+	}
+	.promo-ios{
+		background:url(../img/6/download.jpg);
+	}
+	.globalfooter .gf-content{
+        padding:0 16px;margin:0 auto;padding-top:20px;  
+	}
+	.clearfix:after{
+		content:"";display:table;  
+	}
+	.globalfooter .col{
+		width:100%;
+	}
+	.globalfooter .col-section{
+		width:100%;border-bottom:1px solid #666;line-height:40px;
+	}
+	.globalfooter .col-products h3:after{
+		content:"+";float:right;line-height:40px;display:inline;transition:all 0.6s ease;    
+	}
+	.globalfooter{
+		overflow: hidden;
+	}
+	.col-section{
+		position: relative;
+	}
+	.col-section ul{
+		position:absolute;
+		visibility:hidden;  
+	}
+	#check11,#check22,#check33,#check44,#check55,#check66,#check77{
+		display: none;
+	}
+	#check11:checked~ul,#check22:checked~ul,#check33:checked~ul,#check44:checked~ul,#check55:checked~ul,#check66:checked~ul,#check77:checked~ul{
+       position: relative;visibility: visible;
+	}  
+	#check11:checked~.col-products h3:after,#check22:checked~.col-products h3:after,#check33:checked~.col-products h3:after,#check44:checked~.col-products h3:after,#check55:checked~.col-products h3:after,#check66:checked~.col-products h3:after,#check77:checked~.col-products h3:after{
+		transform:rotateZ(45deg);
+	}
+
+}
+
+
+
